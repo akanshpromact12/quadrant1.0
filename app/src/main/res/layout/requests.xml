@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2e2d32">
+
+    <TextView
+        android:id="@+id/groupNameReqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ada9ba"
+        android:visibility="visible"
+        android:textColor="@android:color/black"
+        android:text="Group Name"/>
+
+    <LinearLayout
+        android:id="@+id/testLinearLayout"
+        android:orientation="vertical"
+        android:layout_below="@+id/groupNameReqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

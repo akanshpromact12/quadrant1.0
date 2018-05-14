@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorName">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarInvitePeople"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/invitePeopleToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:id="@+id/invitesActToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/backButtonInvitePeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:id="@+id/invitePeopleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invite People"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarInvitePeople"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/txtViewExcellent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:text="Excellent !" />
+
+        <TextView
+            android:id="@+id/txtViewGrpCreated"
+            android:layout_below="@+id/txtViewExcellent"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Your new group is created" />
+
+        <Button
+            android:id="@+id/btnInvitePeople"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:text="Invite People"
+            android:layout_below="@+id/txtViewGrpCreated"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button_public"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtViewFbSms"
+            android:layout_below="@+id/btnInvitePeople"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="facebook, sms, email, etc..." />
+
+        <TextView
+            android:id="@+id/txtViewOrInvPeople"
+            android:layout_below="@+id/txtViewFbSms"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="or" />
+
+        <Button
+            android:id="@+id/btnReturnToGrps"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:text="Return to Groups"
+            android:layout_below="@+id/txtViewOrInvPeople"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button_public"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

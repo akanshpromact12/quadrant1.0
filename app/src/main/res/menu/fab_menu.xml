@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_menu_create_grp"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/menu_create_group" />
+    <item
+        android:id="@+id/action_menu_pm"
+        android:icon="@drawable/group_1"
+        android:title="@string/menu_pm"/>
+    <item
+        android:id="@+id/action_menu_invite_people"
+        android:icon="@drawable/add_member"
+        android:title="@string/menu_invite_people" />
+</menu>

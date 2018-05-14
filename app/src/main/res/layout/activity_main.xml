@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gametime.quadrant.LoginModule.LoginActivity"
+    android:background="#2e2d32">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/quadrantLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="319dp"
+            android:src="@drawable/quadrant_logo" />
+
+        <TextView
+            android:id="@+id/loginWithText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quadrantLogo"
+            android:layout_alignLeft="@+id/FB_LoginButton"
+            android:layout_alignStart="@+id/FB_LoginButton"
+            android:layout_marginBottom="27dp"
+            android:text="Login With"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/FB_LoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loginWithText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp"
+            android:src="@drawable/ic_fb" />
+
+        <TextView
+            android:id="@+id/loginWithFbText"
+            android:layout_below="@+id/FB_LoginButton"
+            android:layout_marginTop="15dp"
+            android:text="Facebook"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:indeterminate="true"
+            android:layout_below="@+id/loginWithFbText"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

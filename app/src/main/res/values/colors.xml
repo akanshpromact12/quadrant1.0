@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorForDrawArea">#ce404e79</color>
+    <color name="senderAsSelfColor">#249dab</color>
+    <color name="senderColor">#44494d</color>
+    <color name="colorName">#2e2d32</color>
+    <color name="sendButtonColor">#008c7a</color>
+    <color name="tabIconColor">#929292</color>
+    <color name="mapStrokeColor">#0000ff</color>
+    <color name="mapFillColor">#b386ecec</color>
+    <color name="NearbyMemberCountColor">#ff9503</color>
+    <color name="cardViewBackgroundColor">#777779</color>
+    <color name="popupWindowColor">#a8000000</color>
+    <color name="color_alert_button">#ff0000</color>
+</resources>

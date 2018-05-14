@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gametime.quadrant.JoinGroupModule.JoinGroupActivity">
+
+    <include layout="@layout/progress_bar_layout" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayoutJoinGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarJoinGroup"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:background="@android:color/black"
+                    android:id="@+id/backButtonJoinGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:id="@+id/titleJoinGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/appBarLayoutJoinGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/groupNameToJoin"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="Group Description: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/groupTypeToJoin"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@+id/groupNameToJoin"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Group Type: " />
+
+        <TextView
+            android:id="@+id/NoOfMembersOfGroupToJoin"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/groupTypeToJoin"
+            android:layout_height="wrap_content"
+            android:text="No. of members: " />
+
+        <TextView
+            android:id="@+id/adminOfGroupToJoin"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/NoOfMembersOfGroupToJoin"
+            android:layout_height="wrap_content"
+            android:text="Admins of group: " />
+
+        <fragment
+            android:id="@+id/mapOfGroupToJoin"
+            android:layout_below="@+id/adminOfGroupToJoin"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/mapOfGroupToJoin"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/joinGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="JOIN" />
+
+            <Button
+                android:id="@+id/cancelGroupJoin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Cancel" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

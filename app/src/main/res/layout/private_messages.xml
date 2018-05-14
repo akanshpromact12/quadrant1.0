@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2e2d32">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/privateMsgUsersCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:elevation="3dp"
+        card_view:cardBackgroundColor="#2e2d32"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPaddingTop="15dp"
+        card_view:contentPaddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/PMProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/chaticon"/>
+
+            <TextView
+                android:id="@+id/PMName"
+                android:textSize="22sp"
+                android:text="Name"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/PMProfile"
+                android:layout_marginLeft="10dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

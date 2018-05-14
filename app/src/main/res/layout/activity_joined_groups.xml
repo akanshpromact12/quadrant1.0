@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/joinedRelativeView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2d32">
+
+    <include layout="@layout/progress_bar_layout" />
+
+    <TextView
+        android:id="@+id/noJoinedGrps"
+        android:layout_width="wrap_content"
+        android:text="NO JOINED GROUPS"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/joinedGroupsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_marginLeft="20dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

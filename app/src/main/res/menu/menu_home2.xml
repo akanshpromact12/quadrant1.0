@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gametime.quadrant.HomeModule.HomeActivity">
+    <item
+        android:id="@+id/action_nearbyGrps"
+        android:icon="@drawable/group"
+        android:title="nearby groups"/>
+    <item
+        android:id="@+id/action_joinedGrps"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="joined by me"/>
+    <item
+        android:id="@+id/action_createdGrps"
+        android:icon="@drawable/ic_lock_black_24dp"
+        android:title="created by me"/>
+    <item
+        android:id="@+id/action_requests"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        android:title="requests"/>
+</menu>

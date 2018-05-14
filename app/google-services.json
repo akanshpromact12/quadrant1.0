@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "70493368625",
+    "firebase_url": "https://quadrant2-3c769.firebaseio.com",
+    "project_id": "quadrant2-3c769",
+    "storage_bucket": "quadrant2-3c769.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70493368625:android:e93635342cbe4b52",
+        "android_client_info": {
+          "package_name": "com.gametime.quadrant2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70493368625-e7k0th6e6usr46advok3q9gq5t48di07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gametime.quadrant2",
+            "certificate_hash": "7fa16c217dd857b44c37a2d699621fecdf10027f"
+          }
+        },
+        {
+          "client_id": "70493368625-14l2mbbtf44am50q7cp8em5skcm08bje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1knuhrfB-IJArLaGCdR0hkC_Qfpw84gE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70493368625-14l2mbbtf44am50q7cp8em5skcm08bje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

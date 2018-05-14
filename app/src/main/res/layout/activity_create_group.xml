@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2d32"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/rootLayout"
+    tools:context="com.gametime.quadrant.CreateGroupModule.CreateGroupActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarJoinGroup"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/backButtonCreateGroup"
+                    android:background="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:id="@+id/titleCreateGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtBoxGroupName"
+                android:hint="Group Name"
+                android:textColor="@android:color/white"
+                android:textColorHint="#d5d4d9"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtBoxGroupDesc"
+                android:hint="Group Description"
+                android:textColor="#d5d4d9"
+                android:textColorHint="@android:color/white"
+                android:layout_below="@+id/txtBoxGroupName"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/privatePublicGrpTitle"
+                android:text="Will this group be..."
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/txtBoxGroupDesc"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnPublic"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/privatePublicGrpTitle"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_button_public"
+                android:layout_marginTop="25dp"
+                android:text="Public"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:textColor="#dceac4" />
+
+            <TextView
+                android:id="@+id/publicGrpDesc"
+                android:layout_centerHorizontal="true"
+                android:text="Open to anyone who is in \n the area you draw"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#a7a7a7"
+                android:textSize="17sp"
+                android:layout_below="@+id/btnPublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/orText"
+                android:text="or"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/publicGrpDesc"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnPrivate"
+                android:text="Private"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:textColor="#dceac4"
+                android:background="@drawable/rounded_button_public"
+                android:layout_below="@id/orText"
+                android:layout_marginTop="15dp"
+                android:layout_width="230dp"
+                android:textSize="22sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/privateGrpDesc"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPrivate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Password or Admin protected"
+                android:textColor="#a7a7a7" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:indeterminate="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/privateGrpDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

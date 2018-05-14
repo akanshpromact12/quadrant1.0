@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2d32">
+
+    <include layout="@layout/progress_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/txtViewNearbyGrpsNoGrps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:text="NO NEARBY GROUPS"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
