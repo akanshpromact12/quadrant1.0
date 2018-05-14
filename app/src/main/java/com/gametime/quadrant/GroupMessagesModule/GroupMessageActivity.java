@@ -378,6 +378,7 @@ public class GroupMessageActivity extends QuadrantPermissionsBaseActivity implem
                 groupJid = groups.getRoomJid();
                 groupid = groups.getId().toString();
                 groupName = groups.getName();
+
                 //getJabberRoomStatus(this, "join", String.valueOf(groups.getId()));
                 Log.d(TAG, "onCreate: -> group: " + groups.getName());
             } else if (joinedGroups != null) {
